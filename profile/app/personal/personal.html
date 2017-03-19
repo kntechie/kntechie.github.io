@@ -1,0 +1,51 @@
+﻿<div ng-controller="personalController" ng-init="imgSrc = 'images/profilePicture.JPG'">
+
+<!-- The Modal -->
+<div ng-style="modalDisplay" id="myModal" class="modal">
+  <span ng-click="close_click()" class="closeModal">×</span>
+  <img class="modal-content" src="{{modalSource}}" alt="{{modalAlt}}" id="img01">
+  <div id="caption">{{captionText}}</div>
+</div>
+
+<div style="padding-bottom:50px;padding-top:30px;">
+
+    <div style="text-align:center;" class="row">
+        <div class="col-xs-12" >
+            <div class="col-xs-12 hidden-sm hidden-lg hidden-md center-block" style="position:relative;border:1px solid black;box-shadow: 5px 5px 5px #888888;">
+                 <p style="position:relative;top:-10px;"><span style="background-color:white;padding:5px;">Who am I?</span></p>
+                <h1>Personal Details</h1>
+            </div>
+			<div class="hidden-xs center-block" style="position:relative;border:1px solid black;width:350px;box-shadow: 5px 5px 5px #888888;">
+                <p style="position:relative;top:-10px;"><span style="background-color:white;padding:5px;">Who am I?</span></p>
+                <h1>Personal Details</h1>
+            </div>
+        </div>
+	</div>
+	
+    <div style="padding-top:40px;" class="row">
+        <div class="hidden-xs col-sm-3">
+            <img ng-click="img_click()" class="img img-thumbnail" style="float:right;" ng-src="{{imgSrc}}" height="230" width="230" alt="">
+        </div>
+		<div class="col-xs-12 hidden-sm hidden-lg hidden-md">
+            <img ng-click="img_click()" class="img img-thumbnail center-block" ng-src="{{imgSrc}}" height="220" width="230" alt="">
+        </div>
+		<div class="col-xs-12 col-sm-5">
+			<ul style="list-style-type:none;margin-left:-25px;" class="">
+				<li style="border-bottom:1px solid grey;padding-bottom:8px;padding-top:8px;"><strong>Name:</strong> Kumaran S</li>
+				<li style="border-bottom:1px solid grey;padding-bottom:8px;padding-top:8px;"><strong>Nationality:</strong> Citizen of India</li>
+				<li style="border-bottom:1px solid grey;padding-bottom:8px;padding-top:8px;"><strong>Email:</strong> <a href="mailto:kumaran26kumaran@gmail.com">kumaran26kumaran@gmail.com</a></li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<h4 class="text-uppercase">Professional Profile</h4>
+			<p>I'm a UI/Web Developer and Designer from Chennai, India.</p> 
+			<p>I enjoy turning complex problems into simple, beautiful and intuitive interface. When I'm not coding or pushing pixels, you'll find me in the ground hanging with my friends playing Cricket.</p>
+			<h4 class="text-uppercase">Hobbies &amp; Interests</h4>
+			<p><strong>Sports - </strong>Cricket : My favourite game, Every Weekend supposed to enjoy cricket with my friends.</p>
+			<p><strong>Technology - </strong>Learning New Technology is my Passion and Interest</p>
+		</div>
+    </div>
+	
+</div>
+
+</div>

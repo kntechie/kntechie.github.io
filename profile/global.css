@@ -1,0 +1,33 @@
+.progress
+{
+	height: 14px;
+}
+.progress-bar
+{
+	font-size: 12px;
+	line-height: 14px;
+	background-color: black;
+}
+.hov li:hover
+{
+	background-color:black;
+}
+.mainContent
+{
+	height:auto;
+	margin-top:60px;
+}
+.footerContent
+{
+	background-color:grey;
+	padding:10px;
+	bottom:0px;
+	width:100%;
+}
+.logoContent
+{
+	background-color:black;
+	margin-left:20px;
+}
+
+

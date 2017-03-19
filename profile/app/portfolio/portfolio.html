@@ -1,0 +1,39 @@
+﻿<div style="padding-bottom:50px;padding-top:30px;">
+
+    <div style="text-align:center;" class="row">
+        <div class="col-xs-12" >
+            <div class="col-xs-12 hidden-sm hidden-lg hidden-md center-block" style="position:relative;border:1px solid black;box-shadow: 5px 5px 5px #888888;">
+                 <p style="position:relative;top:-10px;"><span style="background-color:white;padding:5px;">My latest work</span></p>
+                <h1>Portfolio</h1>
+            </div>
+			<div class="hidden-xs center-block" style="position:relative;border:1px solid black;width:350px;box-shadow: 5px 5px 5px #888888;">
+                <p style="position:relative;top:-10px;"><span style="background-color:white;padding:5px;">My latest work</span></p>
+                <h1>Portfolio</h1>
+            </div>
+        </div>
+	</div>
+                
+    <div ng-controller="portController" style="padding-top:40px;" class="row">
+        <div class="col-sm-12">
+			<div style="margin:auto;">
+			<h4>Brochure - Project (Image Institute)</h4>
+			</br>
+                <div ng-repeat="file in files[0].project">
+				<img class="col-xs-6 col-sm-4 col-md-4 col-lg-4 img img-thumbnail" ng-src="{{ file.path }}"/>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			</br>
+			<hr>
+			</br>
+			<div style="margin:auto;">
+			<h4>Graphics Design - Logos</h4>
+			</br>
+                <div ng-repeat="file in files[1].logos">
+				<img style="height:150px;" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 img img-thumbnail" ng-src="{{ file.path }}"/>
+				</div>
+			</div>
+		</div>
+    </div>                
+    
+</div>
